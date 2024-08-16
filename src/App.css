@@ -1,0 +1,25 @@
+.backgroundFarm {
+    position: relative;
+    min-height: 80vh;
+    background-image: url('./assets/plano de fundo.jpg'); /* Caminho relativo pode ser usado */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 10%;
+  }
+  
+  .backgroundFarm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/plano_de_fundo.jpg'); /* Ajuste o caminho se necessário */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.10; /* Ajuste a opacidade */
+    z-index: -1; /* Garante que a imagem de fundo fique atrás do conteúdo */
+  }
+  

@@ -1,7 +1,4 @@
-import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
@@ -11,6 +8,12 @@ import Login from "./pages/login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
 import { ToastContainer } from "react-toastify";
 import Cadastro from "./pages/cadastro/Cadastro";
+import FormularioCategoria from "./categorias/formularioCategoria/FormularioCategoria";
+import FormularioProduto from "./produtos/formularioProduto/FormularioProduto";
+import ListaProdutos from "./produtos/listaProduto/ListaProduto";
+import DeletarCategoria from "./categorias/deletarCategoria/DeletarCategoria";
+import DeletarProduto from "./produtos/deletarProduto/DeletarProduto";
+
 
 function App() {
   return (
@@ -19,12 +22,18 @@ function App() {
         <ToastContainer />
         <BrowserRouter>
           <Navbar />
-          <div className="min-h-[80vh] bg-gray-100">
+          <div className="bg-blue-200">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
-              
+              <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
+              <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
+              <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+              <Route path="/produtos" element={<ListaProdutos />} />
+              <Route path="/cadastroProdutos" element={<FormularioProduto />} />
+              <Route path="/editarProduto/:id" element={<FormularioProduto />} />
+              <Route path="/deletarProduto/:id" element={<DeletarProduto/>} />
             </Routes>
           </div>
           <Footer />

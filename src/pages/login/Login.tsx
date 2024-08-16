@@ -17,7 +17,7 @@ function Login() {
     const {isLoading} = useContext(AuthContext) 
   
     useEffect(() => {
-      if (usuario.token !== "") {
+      if (usuario.token == "") {
           navigate('/home')
       }
   }, [usuario])
@@ -78,7 +78,7 @@ function Login() {
   
             <p>
               Ainda não tem uma conta?{' '}
-              <Link to="/cadastro" className="colorText hover:underline">
+              <Link to="/cadastro" className="text-indigo-80 hover:underline">
                 Cadastre-se
               </Link>
             </p>

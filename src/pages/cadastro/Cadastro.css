@@ -1,8 +1,36 @@
-.fundoCadastro {
-    background-image: url(../../assets/cadastro.jpg);
-      background-repeat: no-repeat;
-      width: 100%;
-      min-height: 100vh;
-      background-size: cover;
-      background-position: center;
-  }
+.custom-hover {
+  background-color: #26ade5; /* Cor de fundo padrão */
+  color: white; /* Cor do texto padrão */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  text-align: center; /* Alinhar o texto ao centro */
+  text-decoration: none; /* Remove o sublinhado */
+  display: inline-block; /* Faz com que o link se comporte como um bloco */
+  transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.custom-hover:hover {
+  background-color: #2ecc71; /* Cor de fundo ao passar o cursor */
+  transform: scale(1.1); /* Aumenta o tamanho do elemento */
+}
+
+.colorText {
+  font-style: inherit;
+  color: #26ade5;
+}
+
+.custom-hoverCancel {
+  background-color: red; /* Cor de fundo padrão */
+  color: white; /* Cor do texto padrão */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  text-align: center; /* Alinhar o texto ao centro */
+  text-decoration: none; /* Remove o sublinhado */
+  display: inline-block; /* Faz com que o link se comporte como um bloco */
+  transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.custom-hoverCancel:hover {
+  background-color: rgb(209, 107, 107); /* Cor de fundo ao passar o cursor */
+  transform: scale(1.1); /* Aumenta o tamanho do elemento */
+}
