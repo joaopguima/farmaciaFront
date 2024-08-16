@@ -4,6 +4,7 @@
     z-index: 10;
 }
 
-.color-text{
-    color: #53c38d;
+.colorText {
+    font-style: inherit;
+    color: #26ade5;
 }
